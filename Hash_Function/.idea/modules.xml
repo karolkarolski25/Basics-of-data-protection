@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hash_Function.iml" filepath="$PROJECT_DIR$/Hash_Function.iml" />
+    </modules>
+  </component>
+  <dependency>
+    <groupId>org.javatuples</groupId>
+    <artifactId>javatuples</artifactId>
+    <version>1.2</version>
+  </dependency>
+</project>
