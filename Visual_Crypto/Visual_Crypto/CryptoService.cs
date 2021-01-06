@@ -16,11 +16,18 @@ namespace Visual_Crypto
             {
                 for (int y = 0; y < 200; y++)
                 {
-                    mergedImage.SetPixel(x, y, dividedImage[0].GetPixel(x, y).Name == dividedImage[1].GetPixel(x, y).Name ? Color.White : Color.Black);
+                    if (dividedImage[0].GetPixel(x, y).Name == "ff000000" || dividedImage[1].GetPixel(x, y).Name == "ff000000")
+                    {
+                        mergedImage.SetPixel(x, y, Color.Black);
+                    }
+                    else
+                    {
+                        mergedImage.SetPixel(x, y, Color.White);
+                    }
                 }
             }
 
-            return new Bitmap(mergedImage, 100, 100);
+            return mergedImage;
         }
 
         public static Bitmap[] GenerateDivisions(Bitmap loadedImg)
